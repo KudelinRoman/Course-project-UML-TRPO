@@ -1,0 +1,10 @@
+E:\Course Project\Course Project\Course Project\bin\Debug\Course Project.exe.config
+E:\Course Project\Course Project\Course Project\bin\Debug\Course Project.exe
+E:\Course Project\Course Project\Course Project\bin\Debug\Course Project.pdb
+E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.csprojAssemblyReference.cache
+E:\Course Project\Course Project\Course Project\obj\Debug\Course_Project.Form1.resources
+E:\Course Project\Course Project\Course Project\obj\Debug\Course_Project.Properties.Resources.resources
+E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.csproj.GenerateResource.cache
+E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.csproj.CoreCompileInputs.cache
+E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.exe
+E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.pdb
