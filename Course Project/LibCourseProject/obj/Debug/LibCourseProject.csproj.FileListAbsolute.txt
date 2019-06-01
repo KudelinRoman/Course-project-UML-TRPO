@@ -1,0 +1,6 @@
+E:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\bin\Debug\LibCourseProject.dll
+E:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\bin\Debug\LibCourseProject.pdb
+E:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.csprojAssemblyReference.cache
+E:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.csproj.CoreCompileInputs.cache
+E:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.dll
+E:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.pdb

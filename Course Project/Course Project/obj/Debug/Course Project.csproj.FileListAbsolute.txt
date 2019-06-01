@@ -8,3 +8,16 @@ E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.csproj.
 E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.csproj.CoreCompileInputs.cache
 E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.exe
 E:\Course Project\Course Project\Course Project\obj\Debug\Course Project.pdb
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\Course Project.exe.config
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\Course Project.exe
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\Course Project.pdb
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\LibCourseProject.dll
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\LibCourseProject.pdb
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csprojAssemblyReference.cache
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course_Project.Form1.resources
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course_Project.Properties.Resources.resources
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csproj.GenerateResource.cache
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csproj.CoreCompileInputs.cache
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csproj.CopyComplete
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.exe
+E:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.pdb
