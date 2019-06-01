@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Resources\Безымянный11111.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\LibCourseProject.csproj">
+      <Project>{808a3720-5ccd-4da1-ab26-369124e2713a}</Project>
+      <Name>LibCourseProject</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

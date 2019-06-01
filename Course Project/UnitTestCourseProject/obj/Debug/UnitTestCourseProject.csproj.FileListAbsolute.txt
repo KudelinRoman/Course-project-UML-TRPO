@@ -1,0 +1,17 @@
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\UnitTestCourseProject.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\UnitTestCourseProject.pdb
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Course Project\Course Project\UnitTestCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Course Project\Course Project\UnitTestCourseProject\obj\Debug\UnitTestCourseProject.csprojAssemblyReference.cache
+E:\Course Project\Course Project\UnitTestCourseProject\obj\Debug\UnitTestCourseProject.csproj.CoreCompileInputs.cache
+E:\Course Project\Course Project\UnitTestCourseProject\obj\Debug\UnitTestCourseProject.csproj.CopyComplete
+E:\Course Project\Course Project\UnitTestCourseProject\obj\Debug\UnitTestCourseProject.dll
+E:\Course Project\Course Project\UnitTestCourseProject\obj\Debug\UnitTestCourseProject.pdb
