@@ -8,10 +8,21 @@ namespace LibCourseProject
 {
 	class MLimitOfTwoElements: Model
 	{
+		/// <summary>
+		/// Размер
+		/// </summary>
 		double _size;
+		/// <summary>
+		/// Изображение
+		/// </summary>
 		object _image;
+		/// <summary>
+		/// Положение (координаты)
+		/// </summary>
 		int _coordinates;
-
+		/// <summary>
+		/// Возвращает или задает размер
+		/// </summary>
 		public double Size
 		{
 			get
@@ -23,7 +34,9 @@ namespace LibCourseProject
 				_size = value;
 			}
 		}
-
+		/// <summary>
+		/// Возвращает изображение
+		/// </summary>
 		public object Image
 		{
 			get
@@ -31,7 +44,9 @@ namespace LibCourseProject
 				return _image;
 			}
 		}
-
+		/// <summary>
+		/// Возвращает или задает координаты
+		/// </summary>
 		public int Coordinates
 		{
 			get
