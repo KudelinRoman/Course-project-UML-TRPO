@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class CPackage
+	public class CPackage
 	{
+		public CPackage():base()
+		{
+
+		}
 	}
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class CLimitOfTwoElements
+	public class CLimitOfTwoElements
 	{
+		public CLimitOfTwoElements():base()
+		{
+
+		}
 	}
 }

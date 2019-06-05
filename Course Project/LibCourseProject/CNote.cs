@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class CNote
+	public class CNote
 	{
+		public CNote():base()
+		{
+
+		}
 	}
 }

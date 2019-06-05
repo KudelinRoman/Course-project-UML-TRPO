@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class CDependence
+	public class CDependence
 	{
+		public CDependence():base()
+		{
+
+		}
 	}
 }

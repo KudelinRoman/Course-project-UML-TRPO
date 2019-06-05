@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class CRestriction
+	public class CRestriction
 	{
+		public CRestriction():base()
+		{
+
+		}
 	}
 }

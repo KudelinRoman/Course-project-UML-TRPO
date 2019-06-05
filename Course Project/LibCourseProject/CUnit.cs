@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class CUnit
+	public class CUnit
 	{
+		public CUnit() : base()
+		{
+		
+		}
 	}
 }

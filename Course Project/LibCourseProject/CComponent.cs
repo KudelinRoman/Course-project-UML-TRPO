@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class CComponent
+	public class CComponent
 	{
+		public CComponent () : base()
+		{
+
+		}
 	}
 }
