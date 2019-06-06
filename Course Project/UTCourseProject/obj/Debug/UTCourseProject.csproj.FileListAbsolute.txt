@@ -1,0 +1,22 @@
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\UTCourseProject.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\UTCourseProject.pdb
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Course Project.exe
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\LibCourseProject.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Course Project.pdb
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Course Project.exe.config
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\LibCourseProject.pdb
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\obj\Debug\UTCourseProject.csprojAssemblyReference.cache
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\obj\Debug\UTCourseProject.csproj.CoreCompileInputs.cache
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\obj\Debug\UTCourseProject.csproj.CopyComplete
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\obj\Debug\UTCourseProject.dll
+E:\Git\Course-project-UML-TRPO\Course Project\UTCourseProject\obj\Debug\UTCourseProject.pdb

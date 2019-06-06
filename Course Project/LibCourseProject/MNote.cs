@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class MNote: Model
+	public class MNote: Model
 	{
 		/// <summary>
 		/// Размер

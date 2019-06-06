@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class MUnit: Model
+	public class MUnit: Model
 	{
 		/// <summary>
 		/// Размер

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class MInterface: Model
+	public class MInterface: Model
 	{
 		/// <summary>
 		/// Размер

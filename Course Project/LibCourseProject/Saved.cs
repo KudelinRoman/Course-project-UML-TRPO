@@ -11,14 +11,14 @@ namespace LibCourseProject
 	/// </summary>
 	public class Saved
 	{
-		public List<CComponent> cComponents = new List<CComponent>();
-		public List<CDependence> cDependences = new List<CDependence>();
-		public List<CInterface> cInterfaces = new List<CInterface>();
-		public List<CLimitOfTwoElements> CLimitOfTwoElements = new List<CLimitOfTwoElements>();
-		public List<CNote> cNotes = new List<CNote>();
-		public List<CPackage> cPackages = new List<CPackage>();
-		public List<CRestriction> cRestrictions = new List<CRestriction>();
-		public List<CRestrictionOr> cRestrictionsOr = new List<CRestrictionOr>();
-		public List<CUnit> cUnits = new List<CUnit>();
+		public List<MComponent> mComponents = new List<MComponent>();
+		public List<MDependence> mDependences = new List<MDependence>();
+		public List<MInterface> mInterfaces = new List<MInterface>();
+		public List<MLimitOfTwoElements> mLimitOfTwoElements = new List<MLimitOfTwoElements>();
+		public List<MNote> mNotes = new List<MNote>();
+		public List<MPackage> mPackages = new List<MPackage>();
+		public List<MRestriction> mRestrictions = new List<MRestriction>();
+		public List<MRestrictionOr> mRestrictionsOr = new List<MRestrictionOr>();
+		public List<MUnit> mUnits = new List<MUnit>();
 	}
 }
