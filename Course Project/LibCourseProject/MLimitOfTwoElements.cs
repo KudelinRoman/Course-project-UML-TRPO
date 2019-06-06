@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class MLimitOfTwoElements: Model
+	public class MLimitOfTwoElements: Model
 	{
 		/// <summary>
 		/// Размер

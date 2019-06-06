@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class MRestrictionOr: Model
+	public class MRestrictionOr: Model
 	{
 		/// <summary>
 		/// Размер

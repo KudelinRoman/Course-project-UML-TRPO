@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibCourseProject
 {
-	class MDependence: Model
+	public class MDependence: Model
 	{
 		/// <summary>
 		/// Размер
