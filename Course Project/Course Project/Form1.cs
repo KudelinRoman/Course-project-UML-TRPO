@@ -16,7 +16,7 @@ namespace Course_Project
 		{
 			InitializeComponent();
 		}
-
+		Image image= null; // переменная которая содержит изображение выбранного элемента
 		// Обработка событий MouseEnter и MousLeave для изображений
 		#region
 
@@ -109,7 +109,31 @@ namespace Course_Project
 		{
 			label1.Text = "";
 		}
-		#endregion 
+		#endregion
+
 		
+		private void pictureBox2_MouseDown(object sender, MouseEventArgs e) //метод определяющий какой из элементов удерживается
+		{
+			if (sender == pictureBox2)
+				image = pictureBox2.Image;
+			if (sender == pictureBox1)
+				image = pictureBox1.Image;
+			if (sender == pictureBox3)
+				image = pictureBox3.Image;
+			if (sender == pictureBox4)
+				image = pictureBox4.Image;
+			if (sender == pictureBox5)
+				image = pictureBox5.Image;
+			if (sender == pictureBox6)
+				image = pictureBox6.Image;
+			if (sender == pictureBox7)
+				image = pictureBox7.Image;
+			if (sender == pictureBox8)
+				image = pictureBox8.Image;
+			if (sender == pictureBox9)
+				image = pictureBox9.Image;
+		}
+
+
 	}
 }
