@@ -58,7 +58,8 @@ namespace LibCourseProject
 			if (Check(mDependence) == false)
 			{
 				int pos = saved.mDependences.IndexOf(mDependence);
-				saved.mDependences[pos].Coordinates = mDependence.Coordinates;
+				saved.mDependences[pos].CoordinatesX = mDependence.CoordinatesX;
+				saved.mDependences[pos].CoordinatesY = mDependence.CoordinatesY;
 				saved.mDependences[pos].Size = mDependence.Size;
 				return true;
 			}
