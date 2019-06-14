@@ -83,9 +83,29 @@ namespace Course_Project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ogranOR {
+            get {
+                object obj = ResourceManager.GetObject("ogranOR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Paket {
             get {
                 object obj = ResourceManager.GetObject("Paket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap primechanie {
+            get {
+                object obj = ResourceManager.GetObject("primechanie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +126,26 @@ namespace Course_Project.Properties {
         internal static System.Drawing.Bitmap Zavisimost {
             get {
                 object obj = ResourceManager.GetObject("Zavisimost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap авпав {
+            get {
+                object obj = ResourceManager.GetObject("авпав", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ограничение {
+            get {
+                object obj = ResourceManager.GetObject("ограничение", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
