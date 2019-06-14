@@ -104,5 +104,14 @@
       <Name>LibCourseProject</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ogranichenie.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\авпав.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ограничение.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

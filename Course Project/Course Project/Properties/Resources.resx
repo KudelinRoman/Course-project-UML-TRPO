@@ -133,4 +133,10 @@
   <data name="Uzel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Uzel1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ogran2elem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\авпав.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ogranichenie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ограничение.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
