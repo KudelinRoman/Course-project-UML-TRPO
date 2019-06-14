@@ -90,6 +90,9 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.pictureBox9);
 			this.groupBox1.Controls.Add(this.pictureBox8);
 			this.groupBox1.Controls.Add(this.pictureBox7);
@@ -99,9 +102,9 @@
 			this.groupBox1.Controls.Add(this.pictureBox3);
 			this.groupBox1.Controls.Add(this.pictureBox2);
 			this.groupBox1.Controls.Add(this.pictureBox1);
-			this.groupBox1.Location = new System.Drawing.Point(12, 75);
+			this.groupBox1.Location = new System.Drawing.Point(12, 28);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(170, 320);
+			this.groupBox1.Size = new System.Drawing.Size(170, 422);
 			this.groupBox1.TabIndex = 2;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Компоненты UML";
@@ -201,11 +204,12 @@
 			this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
 			this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
 			this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
+			this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(35, 47);
+			this.label1.Location = new System.Drawing.Point(40, 372);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(0, 13);
 			this.label1.TabIndex = 3;
@@ -215,15 +219,19 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.toolStrip1);
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+			this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
+			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+			this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

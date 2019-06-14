@@ -43,6 +43,10 @@ namespace LibCourseProject
 			{
 				return _image;
 			}
+			set
+			{
+				_image = value;
+			}
 		}
 		/// <summary>
 		/// Возвращает или задает координаты

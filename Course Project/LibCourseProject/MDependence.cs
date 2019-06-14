@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace LibCourseProject
 {
 	public class MDependence: Model
@@ -17,9 +18,13 @@ namespace LibCourseProject
 		/// </summary>
 		object _image;
 		/// <summary>
-		/// Положение (координаты)
+		/// Положение (координатa X)
 		/// </summary>
-		int _coordinates;
+		int _coordinatesX;
+		/// <summary>
+		/// Положение (координатa Y)
+		/// </summary>
+		int _coordinatesY;
 		/// <summary>
 		/// Возвращает или задает размер
 		/// </summary>
@@ -43,27 +48,46 @@ namespace LibCourseProject
 			{
 				return _image;
 			}
+			set
+			{
+				_image = value;
+			}
 		}
 		/// <summary>
-		/// Возвращает или задает координаты
+		/// Возвращает или задает координатy X
 		/// </summary>
-		public int Coordinates
+		public int CoordinatesX
 		{
 			get
 			{
-				return _coordinates;
+				return _coordinatesX;
 			}
 			set
 			{
-				_coordinates = value;
+				_coordinatesX = value;
+			}
+		}
+		/// <summary>
+		/// Возвращает или задает координатy Y
+		/// </summary>
+		public int CoordinatesY
+		{
+			get
+			{
+				return _coordinatesY;
+			}
+			set
+			{
+				_coordinatesY = value;
 			}
 		}
 
-		public MDependence(double size, object image, int coordinates) : base()
+		public MDependence(double size, object image, int coordinatesX, int coordinatesY) : base()
 		{
 			Size = size;
 			object Image = image;
-			Coordinates = coordinates;
+			CoordinatesX = coordinatesX;
+			CoordinatesY = coordinatesY;
 		}
 
 	}
