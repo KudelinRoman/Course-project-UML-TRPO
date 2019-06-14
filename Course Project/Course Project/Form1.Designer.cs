@@ -42,6 +42,7 @@
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.picture = new System.Windows.Forms.PictureBox();
 			this.toolStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -53,6 +54,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// toolStrip1
@@ -222,11 +224,22 @@
 			this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
 			this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
 			// 
+			// picture
+			// 
+			this.picture.BackColor = System.Drawing.Color.White;
+			this.picture.Dock = System.Windows.Forms.DockStyle.Right;
+			this.picture.Location = new System.Drawing.Point(188, 25);
+			this.picture.Name = "picture";
+			this.picture.Size = new System.Drawing.Size(612, 425);
+			this.picture.TabIndex = 3;
+			this.picture.TabStop = false;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.picture);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.toolStrip1);
 			this.Name = "Form1";
@@ -248,6 +261,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -268,6 +282,7 @@
 		private System.Windows.Forms.PictureBox pictureBox3;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.PictureBox picture;
 	}
 }
 
