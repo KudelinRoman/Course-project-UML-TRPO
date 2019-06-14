@@ -83,6 +83,26 @@ namespace Course_Project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ogran {
+            get {
+                object obj = ResourceManager.GetObject("ogran", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ogran2elem {
+            get {
+                object obj = ResourceManager.GetObject("ogran2elem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ogranOR {
             get {
                 object obj = ResourceManager.GetObject("ogranOR", resourceCulture);
@@ -126,26 +146,6 @@ namespace Course_Project.Properties {
         internal static System.Drawing.Bitmap Zavisimost {
             get {
                 object obj = ResourceManager.GetObject("Zavisimost", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap авпав {
-            get {
-                object obj = ResourceManager.GetObject("авпав", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ограничение {
-            get {
-                object obj = ResourceManager.GetObject("ограничение", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

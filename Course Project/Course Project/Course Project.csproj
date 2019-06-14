@@ -105,5 +105,17 @@
       <Name>LibCourseProject</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogranOR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primechanie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogran2elem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogran.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
