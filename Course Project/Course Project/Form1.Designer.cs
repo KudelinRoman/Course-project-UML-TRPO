@@ -30,6 +30,7 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+			this.novoe = new System.Windows.Forms.ToolStripButton();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -41,7 +42,6 @@
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.novoe = new System.Windows.Forms.ToolStripButton();
 			this.toolStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -65,6 +65,15 @@
 			this.toolStrip1.Size = new System.Drawing.Size(800, 25);
 			this.toolStrip1.TabIndex = 0;
 			this.toolStrip1.Text = "toolStrip1";
+			// 
+			// novoe
+			// 
+			this.novoe.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.novoe.Image = ((System.Drawing.Image)(resources.GetObject("novoe.Image")));
+			this.novoe.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.novoe.Name = "novoe";
+			this.novoe.Size = new System.Drawing.Size(23, 22);
+			this.novoe.Text = "&Создать";
 			// 
 			// groupBox1
 			// 
@@ -101,7 +110,7 @@
 			this.pictureBox9.Location = new System.Drawing.Point(55, 259);
 			this.pictureBox9.Name = "pictureBox9";
 			this.pictureBox9.Size = new System.Drawing.Size(63, 54);
-			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox9.TabIndex = 3;
 			this.pictureBox9.TabStop = false;
 			this.pictureBox9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
@@ -212,15 +221,6 @@
 			this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
 			this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
 			this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
-			// 
-			// novoe
-			// 
-			this.novoe.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.novoe.Image = ((System.Drawing.Image)(resources.GetObject("novoe.Image")));
-			this.novoe.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.novoe.Name = "novoe";
-			this.novoe.Size = new System.Drawing.Size(23, 22);
-			this.novoe.Text = "&Создать";
 			// 
 			// Form1
 			// 
