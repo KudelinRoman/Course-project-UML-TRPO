@@ -209,7 +209,6 @@
 			this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
 			this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
 			this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
-			this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
 			// 
 			// pictureBox1
 			// 
@@ -226,13 +225,18 @@
 			// 
 			// picture
 			// 
+			this.picture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.picture.BackColor = System.Drawing.Color.White;
-			this.picture.Dock = System.Windows.Forms.DockStyle.Right;
 			this.picture.Location = new System.Drawing.Point(188, 25);
 			this.picture.Name = "picture";
-			this.picture.Size = new System.Drawing.Size(612, 425);
+			this.picture.Size = new System.Drawing.Size(600, 399);
 			this.picture.TabIndex = 3;
 			this.picture.TabStop = false;
+			this.picture.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_MouseClick);
+			this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
+			this.picture.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picture_MouseUp);
 			// 
 			// Form1
 			// 
@@ -244,10 +248,6 @@
 			this.Controls.Add(this.toolStrip1);
 			this.Name = "Form1";
 			this.Text = "Form1";
-			this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
-			this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
-			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-			this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
 			this.groupBox1.ResumeLayout(false);

@@ -18,7 +18,6 @@ namespace Course_Project
 		{
 			InitializeComponent();
 		}
-		Image image; // переменная которая содержит изображение выбранного элемента
 		delegate void del (MouseEventArgs e);
 		del deli;
 		delegate void del2 (MouseEventArgs e, MouseEventArgs e2);
@@ -119,7 +118,6 @@ namespace Course_Project
 		MouseEventArgs Ef;
 		MouseEventArgs Ef2;
 
-
 		private void pictureBox2_MouseDown(object sender, MouseEventArgs e) //метод определяющий какой из элементов удерживается
 		{
 			if (sender == pictureBox2)
@@ -156,28 +154,18 @@ namespace Course_Project
 					deli = PaiU;
 					deli2 = null;
 				}
-			if (sender == pictureBox8)
-				image = pictureBox8.Image;
-			if (sender == pictureBox9)
-				image = pictureBox9.Image;
+			if (sender == pictureBox8) ;
+			//image = pictureBox8.Image;
+			if (sender == pictureBox9) ;
+				//image = pictureBox9.Image;
 		}
 
-		private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
-		{
-			
-		}
-
-		private void Form1_Paint(object sender, PaintEventArgs e)
-		{
-			
-			
-		}
 		private void PaiK(MouseEventArgs e)// для картинки 1
 		{
 			int x1 = e.X;
 			int y1 = e.Y;
 			Pen p = new Pen(Color.Blue);
-			Graphics gr = this.CreateGraphics();
+			Graphics gr = picture.CreateGraphics();
 			Point[] points = { new Point(x1, y1), new Point(x1+90, y1), new Point(x1 + 90, y1 +80), new Point(x1 , y1 + 80), new Point(x1 , y1 + 70), new Point(x1 + 15, y1+70), new Point(x1 + 15, y1 + 55), new Point(x1 + 15, y1 + 70), new Point(x1 -15, y1 + 70), new Point(x1 -15, y1+55), new Point(x1+15, y1 + 55), new Point(x1, y1 + 55), new Point(x1, y1 + 25), new Point(x1+15, y1 + 25), new Point(x1 + 15, y1 + 10), new Point(x1 + 15, y1 + 25), new Point(x1-15, y1 + 25), new Point(x1-15, y1 + 10), new Point(x1+15, y1 + 10), new Point(x1, y1 +10) };
 			gr.DrawPolygon(p, points);
 		}
@@ -186,7 +174,7 @@ namespace Course_Project
 			int x1 = e.X;
 			int y1 = e.Y;
 			Pen p = new Pen(Color.Blue);
-			Graphics gr = this.CreateGraphics();
+			Graphics gr = picture.CreateGraphics();
 			Point[] points = { new Point(x1, y1), new Point(x1, y1 + 80), new Point(x1 + 80, y1 + 80), new Point(x1 + 80, y1 ), new Point(x1 , y1), new Point(x1 + 15, y1-15), new Point(x1 + 95, y1 -15), new Point(x1+80, y1), new Point(x1 + 80, y1+80), new Point(x1 + 95, y1+65), new Point(x1 + 95, y1-15), new Point(x1 + 80, y1) };
 			gr.DrawPolygon(p, points);
 		}
@@ -195,7 +183,7 @@ namespace Course_Project
 			int x1 = e.X;
 			int y1 = e.Y;
 			Pen p = new Pen(Color.Blue);
-			Graphics gr=this.CreateGraphics();
+			Graphics gr= picture.CreateGraphics();
 			Point[] points = { new Point(x1, y1 ), new Point(x1 , y1 + 80), new Point(x1 + 90, y1 + 80), new Point(x1 + 90, y1 + 25), new Point(x1 + 75, y1 + 25), new Point(x1 + 75, y1 ),  new Point(x1 + 90, y1 + 25), new Point(x1 + 75, y1 ) };
 			gr.DrawPolygon(p,points);
 		}
@@ -204,7 +192,7 @@ namespace Course_Project
 			int x1 = e.X;
 			int y1 = e.Y;
 			Pen p = new Pen(Color.Blue);
-			Graphics gr = this.CreateGraphics();
+			Graphics gr = picture.CreateGraphics();
 			Point[] points = { new Point(x1, y1), new Point(x1, y1 + 15), new Point(x1 , y1 + 60), new Point(x1 + 90, y1 + 60), new Point(x1 + 90, y1 + 15), new Point(x1 + 25, y1+15), new Point(x1 , y1 + 15), new Point(x1 + 25, y1+15), new Point(x1 + 25, y1) };
 			gr.DrawPolygon(p, points);
 		}
@@ -217,28 +205,8 @@ namespace Course_Project
 			Pen p = new Pen(Color.Blue,5);
 			p.StartCap = System.Drawing.Drawing2D.LineCap.RoundAnchor; ;
 			
-			Graphics gr = this.CreateGraphics();
-			//RectangleF rec = new RectangleF(x1, y1, 10,10);
-			//if (x1<x2 && y1<y2|| x1 < x2 && y1 > y2)
-			//{
-			//	gr.DrawEllipse(p, rec);
+			Graphics gr = picture.CreateGraphics();
 				gr.DrawLine(p, x1 , y1 , x2, y2);
-			//}
-			//if (x1 > x2 && y1 > y2|| x1 > x2 && y1 < y2)
-			//{
-			//	gr.DrawEllipse(p, rec);
-			//	gr.DrawLine(p, x1, y1 + 5, x2, y2);
-			//}
-			//if (x1 == x2 && y1 < y2)
-			//{
-			//	gr.DrawEllipse(p, rec);
-			//	gr.DrawLine(p, x1+5, y1 +10, x2, y2);
-			//}
-			//if (x1 == x2 && y1 > y2)
-			//{
-			//	gr.DrawEllipse(p, rec);
-			//	gr.DrawLine(p, x1 + 5, y1, x2, y2);
-			//}
 		}
 		private void PaiS(MouseEventArgs e, MouseEventArgs e2)// для картинки 5
 
@@ -251,27 +219,27 @@ namespace Course_Project
 			p.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash ;
 			p.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor ;
 
-			Graphics gr = this.CreateGraphics();
+			Graphics gr = picture.CreateGraphics();
 			
 			gr.DrawLine(p, x1, y1, x2, y2);
 			
 		}
 
-		private void Form1_MouseClick(object sender, MouseEventArgs e)
+		private void picture_MouseClick(object sender, MouseEventArgs e)
 		{
-			if (deli!=null)
+			if (deli != null)
 			{
 				deli(e);
 			}
 			
 		}
 
-		private void Form1_MouseDown(object sender, MouseEventArgs e)
+		private void picture_MouseDown(object sender, MouseEventArgs e)
 		{
 			Ef = e;
 		}
 
-		private void Form1_MouseUp(object sender, MouseEventArgs e)
+		private void picture_MouseUp(object sender, MouseEventArgs e)
 		{
 			Ef2 = e;
 			if (deli2 != null)
@@ -279,6 +247,5 @@ namespace Course_Project
 				deli2(Ef, Ef2);
 			}
 		}
-
 	}
 }
