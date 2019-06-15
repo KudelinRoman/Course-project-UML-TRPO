@@ -30,9 +30,9 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-			this.novoe = new System.Windows.Forms.ToolStripButton();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.picture = new System.Windows.Forms.PictureBox();
 			this.pictureBox9 = new System.Windows.Forms.PictureBox();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -42,9 +42,10 @@
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.picture = new System.Windows.Forms.PictureBox();
+			this.novoe = new System.Windows.Forms.ToolStripButton();
 			this.toolStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -54,7 +55,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// toolStrip1
@@ -67,15 +67,6 @@
 			this.toolStrip1.Size = new System.Drawing.Size(800, 25);
 			this.toolStrip1.TabIndex = 0;
 			this.toolStrip1.Text = "toolStrip1";
-			// 
-			// novoe
-			// 
-			this.novoe.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.novoe.Image = ((System.Drawing.Image)(resources.GetObject("novoe.Image")));
-			this.novoe.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.novoe.Name = "novoe";
-			this.novoe.Size = new System.Drawing.Size(23, 22);
-			this.novoe.Text = "&Создать";
 			// 
 			// groupBox1
 			// 
@@ -105,6 +96,22 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(0, 13);
 			this.label1.TabIndex = 3;
+			// 
+			// picture
+			// 
+			this.picture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.picture.BackColor = System.Drawing.Color.White;
+			this.picture.BackgroundImage = global::Course_Project.Properties.Resources.клетки;
+			this.picture.Location = new System.Drawing.Point(188, 25);
+			this.picture.Name = "picture";
+			this.picture.Size = new System.Drawing.Size(600, 399);
+			this.picture.TabIndex = 3;
+			this.picture.TabStop = false;
+			this.picture.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_MouseClick);
+			this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
+			this.picture.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picture_MouseUp);
 			// 
 			// pictureBox9
 			// 
@@ -223,20 +230,14 @@
 			this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
 			this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
 			// 
-			// picture
+			// novoe
 			// 
-			this.picture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.picture.BackColor = System.Drawing.Color.White;
-			this.picture.Location = new System.Drawing.Point(188, 25);
-			this.picture.Name = "picture";
-			this.picture.Size = new System.Drawing.Size(600, 399);
-			this.picture.TabIndex = 3;
-			this.picture.TabStop = false;
-			this.picture.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_MouseClick);
-			this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
-			this.picture.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picture_MouseUp);
+			this.novoe.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.novoe.Image = ((System.Drawing.Image)(resources.GetObject("novoe.Image")));
+			this.novoe.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.novoe.Name = "novoe";
+			this.novoe.Size = new System.Drawing.Size(23, 22);
+			this.novoe.Text = "&Создать";
 			// 
 			// Form1
 			// 
@@ -252,6 +253,7 @@
 			this.toolStrip1.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -261,7 +263,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
