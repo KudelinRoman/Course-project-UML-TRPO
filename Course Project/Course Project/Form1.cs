@@ -297,10 +297,13 @@ namespace Course_Project
 			{
 				deli2(Ef, Ef2);
 			}
-			if (this.Cursor==Cursors.SizeAll)
+			if (this.Cursor == Cursors.SizeAll)
 			{
-			
+				picture.Refresh();
+				picture_Paint();
+				Points();
 			}
+			
 		}
 		/// <summary>
 		/// Метод перерисовки созданных элементов
@@ -438,7 +441,7 @@ namespace Course_Project
 				gr.DrawRectangle(pen, sev.Intrf[i].X, sev.Intrf[i].Y, 3, 3);
 				gr.DrawRectangle(pen, sev.Intrf[i+1].X, sev.Intrf[i+1].Y, 3, 3);
 			}
-			for (int i = 0; i < sev.Intrf.Count(); i = i + 2)
+			for (int i = 0; i < sev.Zav.Count(); i = i + 2)
 			{
 				gr.DrawRectangle(pen, sev.Zav[i].X, sev.Zav[i].Y, 3, 3);
 				gr.DrawRectangle(pen, sev.Zav[i + 1].X, sev.Zav[i + 1].Y, 3, 3);
@@ -468,7 +471,74 @@ namespace Course_Project
 			pictureBox7.Enabled = true;
 			pictureBox8.Enabled = true;
 			pictureBox9.Enabled = true;
+			picture.Refresh();
 			picture_Paint();
+		}
+
+		private void picture_MouseMove(object sender, MouseEventArgs e)
+		{
+			if (this.Cursor == Cursors.SizeAll)
+			{
+				if (e.Button == System.Windows.Forms.MouseButtons.Left)
+				{
+					for (int i = 0; i < sev.Component.Count(); i++)
+					{
+						if (e.X < sev.Component[i].X + 3 && e.X > sev.Component[i].X - 3 && e.Y < sev.Component[i].Y + 3 && e.Y > sev.Component[i].Y - 3)
+						{
+							sev.Component[i] = e;
+						}
+					}
+					for (int i = 0; i < sev.Unit.Count(); i++)
+					{
+						if (e.X < sev.Unit[i].X + 3 && e.X > sev.Unit[i].X - 3 && e.Y < sev.Unit[i].Y + 3 && e.Y > sev.Unit[i].Y - 3)
+						{
+							sev.Unit[i] = e;
+						}
+					}
+					for (int i = 0; i < sev.Prim.Count(); i++)
+					{
+						if (e.X < sev.Prim[i].X + 3 && e.X > sev.Prim[i].X - 3 && e.Y < sev.Prim[i].Y + 3 && e.Y > sev.Prim[i].Y - 3)
+						{
+							sev.Prim[i] = e;
+						}
+					}
+					for (int i = 0; i < sev.Pac.Count(); i++)
+					{
+						if (e.X < sev.Pac[i].X + 3 && e.X > sev.Pac[i].X - 3 && e.Y < sev.Pac[i].Y + 3 && e.Y > sev.Pac[i].Y - 3)
+						{
+							sev.Pac[i] = e;
+						}
+					}
+					for (int i = 0; i < sev.Intrf.Count(); i++)
+					{
+						if (e.X < sev.Intrf[i].X + 3 && e.X > sev.Intrf[i].X - 3 && e.Y < sev.Intrf[i].Y + 3 && e.Y > sev.Intrf[i].Y - 3)
+						{
+							sev.Intrf[i] = e;
+						}
+					}
+					for (int i = 0; i < sev.Organ2.Count(); i++)
+					{
+						if (e.X < sev.Organ2[i].X + 3 && e.X > sev.Organ2[i].X - 3 && e.Y < sev.Organ2[i].Y + 3 && e.Y > sev.Organ2[i].Y - 3)
+						{
+							sev.Organ2[i] = e;
+						}
+					}
+					for (int i = 0; i < sev.OrganOR.Count(); i++)
+					{
+						if (e.X < sev.OrganOR[i].X + 3 && e.X > sev.OrganOR[i].X - 3 && e.Y < sev.OrganOR[i].Y + 3 && e.Y > sev.OrganOR[i].Y - 3)
+						{
+							sev.OrganOR[i] = e;
+						}
+					}
+					for (int i = 0; i < sev.Zav.Count(); i++)
+					{
+						if (e.X < sev.Zav[i].X + 3 && e.X > sev.Zav[i].X - 3 && e.Y < sev.Zav[i].Y + 3 && e.Y > sev.Zav[i].Y - 3)
+						{
+							sev.Zav[i] = e;
+						}
+					}
+				}
+			}
 		}
 	}
 	/// <summary>
