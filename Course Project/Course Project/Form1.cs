@@ -297,12 +297,18 @@ namespace Course_Project
 			{
 				deli2(Ef, Ef2);
 			}
+			if (this.Cursor==Cursors.SizeAll)
+			{
+			
+			}
 		}
-
+		/// <summary>
+		/// Метод перерисовки созданных элементов
+		/// </summary>
 		private void picture_Paint()
 		{
 			Pen p = new Pen(Color.Blue);
-			Graphics gr = picture.CreateGraphics();
+			Graphics gr = picture.CreateGraphics(); 
 			for (int i = 0; i < sev.Unit.Count(); i++)
 			{
 				MouseEventArgs e = sev.Unit[i];
@@ -396,7 +402,78 @@ namespace Course_Project
 		{
 			picture_Paint();
 		}
+
+		private void toolStripButton1_Click(object sender, EventArgs e)
+		{
+			this.Cursor = Cursors.SizeAll; 
+			pictureBox1.Enabled = false;
+			pictureBox2.Enabled = false;
+			pictureBox3.Enabled = false;
+			pictureBox4.Enabled = false;
+			pictureBox5.Enabled = false;
+			pictureBox6.Enabled = false;
+			pictureBox7.Enabled = false;
+			pictureBox8.Enabled = false;
+			pictureBox9.Enabled = false;
+			deli = null;deli2 = null;
+			Points();
+		}
+		/// <summary>
+		/// Метод, который выделяет главный угол (точку)
+		/// </summary>
+		private void Points ()
+		{
+			Pen pen = new Pen(Color.Blue, 6);
+			Graphics gr = picture.CreateGraphics();
+			for (int i = 0; i < sev.Unit.Count(); i++)
+				gr.DrawRectangle(pen, sev.Unit[i].X, sev.Unit[i].Y, 3, 3);
+			for (int i = 0; i < sev.Component.Count(); i++)
+				gr.DrawRectangle(pen, sev.Component[i].X, sev.Component[i].Y, 3, 3);
+			for (int i = 0; i < sev.Pac.Count(); i++)
+				gr.DrawRectangle(pen, sev.Pac[i].X, sev.Pac[i].Y, 3, 3);
+			for (int i = 0; i < sev.Prim.Count(); i++)
+				gr.DrawRectangle(pen, sev.Prim[i].X, sev.Prim[i].Y, 3, 3);
+			for (int i = 0; i < sev.Intrf.Count(); i = i + 2)
+			{
+				gr.DrawRectangle(pen, sev.Intrf[i].X, sev.Intrf[i].Y, 3, 3);
+				gr.DrawRectangle(pen, sev.Intrf[i+1].X, sev.Intrf[i+1].Y, 3, 3);
+			}
+			for (int i = 0; i < sev.Intrf.Count(); i = i + 2)
+			{
+				gr.DrawRectangle(pen, sev.Zav[i].X, sev.Zav[i].Y, 3, 3);
+				gr.DrawRectangle(pen, sev.Zav[i + 1].X, sev.Zav[i + 1].Y, 3, 3);
+			}
+			for (int i = 0; i < sev.Organ2.Count(); i = i + 2)
+			{
+				gr.DrawRectangle(pen, sev.Organ2[i].X, sev.Organ2[i].Y, 3, 3);
+				gr.DrawRectangle(pen, sev.Organ2[i + 1].X, sev.Organ2[i + 1].Y, 3, 3);
+			}
+			for (int i = 0; i < sev.OrganOR.Count(); i = i + 2)
+			{
+				gr.DrawRectangle(pen, sev.OrganOR[i].X, sev.OrganOR[i].Y, 3, 3);
+				gr.DrawRectangle(pen, sev.OrganOR[i + 1].X, sev.OrganOR[i + 1].Y, 3, 3);
+			}
+			pen.Dispose();
+			gr.Dispose();
+		}
+		private void toolStripButton2_Click(object sender, EventArgs e)
+		{
+			this.Cursor = Cursors.Arrow;
+			pictureBox1.Enabled = true;
+			pictureBox2.Enabled = true;
+			pictureBox3.Enabled = true;
+			pictureBox4.Enabled = true;
+			pictureBox5.Enabled = true;
+			pictureBox6.Enabled = true;
+			pictureBox7.Enabled = true;
+			pictureBox8.Enabled = true;
+			pictureBox9.Enabled = true;
+			picture_Paint();
+		}
 	}
+	/// <summary>
+	/// Класс для сохранения элементов
+	/// </summary>
 	[Serializable]
 	public class Saved
 	{
