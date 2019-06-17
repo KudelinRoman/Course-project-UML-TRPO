@@ -282,6 +282,102 @@ namespace Course_Project
 			{
 				deli(e);
 			}
+			if (this.Cursor==Cursors.Hand)
+			{
+				for (int i = 0; i < sev.Component.Count(); i++)
+				{
+					if (e.X < sev.Component[i].X + 3 && e.X > sev.Component[i].X - 3 && e.Y < sev.Component[i].Y + 3 && e.Y > sev.Component[i].Y - 3)
+					{
+						sev.Component.RemoveAt(i);
+					}
+				}
+				for (int i = 0; i < sev.Unit.Count(); i++)
+				{
+					if (e.X < sev.Unit[i].X + 3 && e.X > sev.Unit[i].X - 3 && e.Y < sev.Unit[i].Y + 3 && e.Y > sev.Unit[i].Y - 3)
+					{
+						sev.Unit.RemoveAt(i);
+					}
+				}
+				for (int i = 0; i < sev.Prim.Count(); i++)
+				{
+					if (e.X < sev.Prim[i].X + 3 && e.X > sev.Prim[i].X - 3 && e.Y < sev.Prim[i].Y + 3 && e.Y > sev.Prim[i].Y - 3)
+					{
+						sev.Prim.RemoveAt(i);
+					}
+				}
+				for (int i = 0; i < sev.Pac.Count(); i++)
+				{
+					if (e.X < sev.Pac[i].X + 3 && e.X > sev.Pac[i].X - 3 && e.Y < sev.Pac[i].Y + 3 && e.Y > sev.Pac[i].Y - 3)
+					{
+						sev.Pac.RemoveAt(i);
+					}
+				}
+				for (int i = 0; i < sev.Intrf.Count(); i++)
+				{
+					if (e.X < sev.Intrf[i].X + 3 && e.X > sev.Intrf[i].X - 3 && e.Y < sev.Intrf[i].Y + 3 && e.Y > sev.Intrf[i].Y - 3)
+					{
+						if (i % 2 == 0)
+						{
+							sev.Intrf.RemoveAt(i + 1);
+							sev.Intrf.RemoveAt(i);
+						}
+						else
+						{
+							sev.Intrf.RemoveAt(i - 1);
+							sev.Intrf.RemoveAt(i-1);
+						}
+
+					}
+				}
+				for (int i = 0; i < sev.Organ2.Count(); i++)
+				{
+					if (e.X < sev.Organ2[i].X + 3 && e.X > sev.Organ2[i].X - 3 && e.Y < sev.Organ2[i].Y + 3 && e.Y > sev.Organ2[i].Y - 3)
+					{
+						if (i % 2 == 0)
+						{
+							sev.Organ2.RemoveAt(i + 1);
+							sev.Organ2.RemoveAt(i);
+						}
+						else
+						{
+							sev.Organ2.RemoveAt(i - 1);
+							sev.Organ2.RemoveAt(i - 1);
+						}
+					}
+				}
+				for (int i = 0; i < sev.OrganOR.Count(); i++)
+				{
+					if (e.X < sev.OrganOR[i].X + 3 && e.X > sev.OrganOR[i].X - 3 && e.Y < sev.OrganOR[i].Y + 3 && e.Y > sev.OrganOR[i].Y - 3)
+					{
+						if (i % 2 == 0)
+						{
+							sev.OrganOR.RemoveAt(i + 1);
+							sev.OrganOR.RemoveAt(i);
+						}
+						else
+						{
+							sev.OrganOR.RemoveAt(i - 1);
+							sev.OrganOR.RemoveAt(i - 1);
+						}
+					}
+				}
+				for (int i = 0; i < sev.Zav.Count(); i++)
+				{
+					if (e.X < sev.Zav[i].X + 3 && e.X > sev.Zav[i].X - 3 && e.Y < sev.Zav[i].Y + 3 && e.Y > sev.Zav[i].Y - 3)
+					{
+						if (i % 2 == 0)
+						{
+							sev.Zav.RemoveAt(i + 1);
+							sev.Zav.RemoveAt(i);
+						}
+						else
+						{
+							sev.Zav.RemoveAt(i - 1);
+							sev.Zav.RemoveAt(i - 1);
+						}
+					}
+				}
+			}
 			
 		}
 
@@ -303,7 +399,13 @@ namespace Course_Project
 				picture_Paint();
 				Points();
 			}
-			
+			if (this.Cursor == Cursors.Hand)
+			{
+				picture.Refresh();
+				picture_Paint();
+				Points();
+			}
+
 		}
 		/// <summary>
 		/// Метод перерисовки созданных элементов
@@ -539,6 +641,22 @@ namespace Course_Project
 					}
 				}
 			}
+		}
+
+		private void toolStripButton3_Click(object sender, EventArgs e)
+		{
+			this.Cursor = Cursors.Hand;
+			pictureBox1.Enabled = false;
+			pictureBox2.Enabled = false;
+			pictureBox3.Enabled = false;
+			pictureBox4.Enabled = false;
+			pictureBox5.Enabled = false;
+			pictureBox6.Enabled = false;
+			pictureBox7.Enabled = false;
+			pictureBox8.Enabled = false;
+			pictureBox9.Enabled = false;
+			deli = null; deli2 = null;
+			Points();
 		}
 	}
 	/// <summary>
