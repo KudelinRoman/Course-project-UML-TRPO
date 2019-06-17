@@ -31,6 +31,15 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.novoe = new System.Windows.Forms.ToolStripButton();
+			this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+			this.измененияФонаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.стандартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.вариант1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.вариант2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.изменитьКурсорToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.стандартСтрелочкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.вариант1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.курсор2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -43,15 +52,6 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.picture = new System.Windows.Forms.PictureBox();
-			this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-			this.измененияФонаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.стандартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.вариант1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.вариант2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.изменитьКурсорToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.стандартСтрелочкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.вариант1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.курсор2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -86,6 +86,74 @@
 			this.novoe.Name = "novoe";
 			this.novoe.Size = new System.Drawing.Size(23, 22);
 			this.novoe.Text = "&Создать";
+			// 
+			// toolStripDropDownButton1
+			// 
+			this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.измененияФонаToolStripMenuItem,
+            this.изменитьКурсорToolStripMenuItem});
+			this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+			this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+			this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 22);
+			this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+			// 
+			// измененияФонаToolStripMenuItem
+			// 
+			this.измененияФонаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.стандартToolStripMenuItem,
+            this.вариант1ToolStripMenuItem,
+            this.вариант2ToolStripMenuItem});
+			this.измененияФонаToolStripMenuItem.Name = "измененияФонаToolStripMenuItem";
+			this.измененияФонаToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+			this.измененияФонаToolStripMenuItem.Text = "Изменения фона";
+			// 
+			// стандартToolStripMenuItem
+			// 
+			this.стандартToolStripMenuItem.Name = "стандартToolStripMenuItem";
+			this.стандартToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.стандартToolStripMenuItem.Text = "Стандарт";
+			// 
+			// вариант1ToolStripMenuItem
+			// 
+			this.вариант1ToolStripMenuItem.Name = "вариант1ToolStripMenuItem";
+			this.вариант1ToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.вариант1ToolStripMenuItem.Text = "Вариант 1";
+			// 
+			// вариант2ToolStripMenuItem
+			// 
+			this.вариант2ToolStripMenuItem.Name = "вариант2ToolStripMenuItem";
+			this.вариант2ToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.вариант2ToolStripMenuItem.Text = "Вариант 2";
+			// 
+			// изменитьКурсорToolStripMenuItem
+			// 
+			this.изменитьКурсорToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.стандартСтрелочкаToolStripMenuItem,
+            this.вариант1ToolStripMenuItem1,
+            this.курсор2ToolStripMenuItem});
+			this.изменитьКурсорToolStripMenuItem.Name = "изменитьКурсорToolStripMenuItem";
+			this.изменитьКурсорToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+			this.изменитьКурсорToolStripMenuItem.Text = "Изменить курсор";
+			// 
+			// стандартСтрелочкаToolStripMenuItem
+			// 
+			this.стандартСтрелочкаToolStripMenuItem.Name = "стандартСтрелочкаToolStripMenuItem";
+			this.стандартСтрелочкаToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+			this.стандартСтрелочкаToolStripMenuItem.Text = "Курсор 1 ";
+			// 
+			// вариант1ToolStripMenuItem1
+			// 
+			this.вариант1ToolStripMenuItem1.Name = "вариант1ToolStripMenuItem1";
+			this.вариант1ToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
+			this.вариант1ToolStripMenuItem1.Text = "Курсор 2";
+			// 
+			// курсор2ToolStripMenuItem
+			// 
+			this.курсор2ToolStripMenuItem.Name = "курсор2ToolStripMenuItem";
+			this.курсор2ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+			this.курсор2ToolStripMenuItem.Text = "Курсор 3";
 			// 
 			// groupBox1
 			// 
@@ -239,83 +307,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.picture.BackColor = System.Drawing.Color.White;
-			this.picture.BackgroundImage = global::Course_Project.Properties.Resources.клетки;
+			this.picture.Image = global::Course_Project.Properties.Resources.клетки;
 			this.picture.Location = new System.Drawing.Point(188, 25);
 			this.picture.Name = "picture";
 			this.picture.Size = new System.Drawing.Size(600, 399);
 			this.picture.TabIndex = 3;
 			this.picture.TabStop = false;
+			this.picture.Paint += new System.Windows.Forms.PaintEventHandler(this.picture_Paint);
 			this.picture.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_MouseClick);
 			this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
 			this.picture.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picture_MouseUp);
-			// 
-			// toolStripDropDownButton1
-			// 
-			this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.измененияФонаToolStripMenuItem,
-            this.изменитьКурсорToolStripMenuItem});
-			this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-			this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-			this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 22);
-			this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
-			// 
-			// измененияФонаToolStripMenuItem
-			// 
-			this.измененияФонаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.стандартToolStripMenuItem,
-            this.вариант1ToolStripMenuItem,
-            this.вариант2ToolStripMenuItem});
-			this.измененияФонаToolStripMenuItem.Name = "измененияФонаToolStripMenuItem";
-			this.измененияФонаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.измененияФонаToolStripMenuItem.Text = "Изменения фона";
-			// 
-			// стандартToolStripMenuItem
-			// 
-			this.стандартToolStripMenuItem.Name = "стандартToolStripMenuItem";
-			this.стандартToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.стандартToolStripMenuItem.Text = "Стандарт";
-			// 
-			// вариант1ToolStripMenuItem
-			// 
-			this.вариант1ToolStripMenuItem.Name = "вариант1ToolStripMenuItem";
-			this.вариант1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.вариант1ToolStripMenuItem.Text = "Вариант 1";
-			// 
-			// вариант2ToolStripMenuItem
-			// 
-			this.вариант2ToolStripMenuItem.Name = "вариант2ToolStripMenuItem";
-			this.вариант2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.вариант2ToolStripMenuItem.Text = "Вариант 2";
-			// 
-			// изменитьКурсорToolStripMenuItem
-			// 
-			this.изменитьКурсорToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.стандартСтрелочкаToolStripMenuItem,
-            this.вариант1ToolStripMenuItem1,
-            this.курсор2ToolStripMenuItem});
-			this.изменитьКурсорToolStripMenuItem.Name = "изменитьКурсорToolStripMenuItem";
-			this.изменитьКурсорToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.изменитьКурсорToolStripMenuItem.Text = "Изменить курсор";
-			// 
-			// стандартСтрелочкаToolStripMenuItem
-			// 
-			this.стандартСтрелочкаToolStripMenuItem.Name = "стандартСтрелочкаToolStripMenuItem";
-			this.стандартСтрелочкаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.стандартСтрелочкаToolStripMenuItem.Text = "Курсор 1 ";
-			// 
-			// вариант1ToolStripMenuItem1
-			// 
-			this.вариант1ToolStripMenuItem1.Name = "вариант1ToolStripMenuItem1";
-			this.вариант1ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-			this.вариант1ToolStripMenuItem1.Text = "Курсор 2";
-			// 
-			// курсор2ToolStripMenuItem
-			// 
-			this.курсор2ToolStripMenuItem.Name = "курсор2ToolStripMenuItem";
-			this.курсор2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.курсор2ToolStripMenuItem.Text = "Курсор 3";
 			// 
 			// Form1
 			// 

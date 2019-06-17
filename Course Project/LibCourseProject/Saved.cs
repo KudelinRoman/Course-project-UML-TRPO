@@ -11,6 +11,7 @@ namespace LibCourseProject
 	/// </summary>
 	public class Saved
 	{
+		
 		public List<MComponent> mComponents = new List<MComponent>();
 		public List<MDependence> mDependences = new List<MDependence>();
 		public List<MInterface> mInterfaces = new List<MInterface>();

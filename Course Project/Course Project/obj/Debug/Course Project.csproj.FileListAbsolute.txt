@@ -33,3 +33,15 @@ C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Cour
 C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csproj.CoreCompileInputs.cache
 C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.exe
 C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.pdb
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\Course Project.exe.config
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\Course Project.exe
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\Course Project.pdb
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\LibCourseProject.dll
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\bin\Debug\LibCourseProject.pdb
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csprojResolveAssemblyReference.cache
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course_Project.Form1.resources
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course_Project.Properties.Resources.resources
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csproj.GenerateResource.Cache
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.csproj.CoreCompileInputs.cache
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.exe
+F:\Git\Course-project-UML-TRPO\Course Project\Course Project\obj\Debug\Course Project.pdb

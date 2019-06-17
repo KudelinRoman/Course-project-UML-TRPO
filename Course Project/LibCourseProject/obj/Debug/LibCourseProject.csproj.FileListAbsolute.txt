@@ -10,3 +10,9 @@ C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Cour
 C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.csproj.CoreCompileInputs.cache
 C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.dll
 C:\Users\максим\Desktop\Новая папка\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.pdb
+F:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\bin\Debug\LibCourseProject.dll
+F:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\bin\Debug\LibCourseProject.pdb
+F:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.csprojResolveAssemblyReference.cache
+F:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.csproj.CoreCompileInputs.cache
+F:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.dll
+F:\Git\Course-project-UML-TRPO\Course Project\LibCourseProject\obj\Debug\LibCourseProject.pdb
