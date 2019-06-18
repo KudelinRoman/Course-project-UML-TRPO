@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using LibCourseProject;
 using static System.Drawing.Drawing2D.LineCap;
 
 namespace Course_Project
@@ -657,6 +656,19 @@ namespace Course_Project
 			pictureBox9.Enabled = false;
 			deli = null; deli2 = null;
 			Points();
+		}
+
+		private void novoe_Click(object sender, EventArgs e)
+		{
+			sev.Component.Clear();
+			sev.Intrf.Clear();
+			sev.Organ2.Clear();
+			sev.OrganOR.Clear();
+			sev.Pac.Clear();
+			sev.Prim.Clear();
+			sev.Unit.Clear();
+			sev.Zav.Clear();
+			picture.Refresh();
 		}
 	}
 	/// <summary>

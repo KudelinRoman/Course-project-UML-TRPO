@@ -42,6 +42,7 @@
 			this.курсор2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -54,7 +55,6 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.picture = new System.Windows.Forms.PictureBox();
-			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
 			this.toolStrip1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -92,6 +92,7 @@
 			this.novoe.Name = "novoe";
 			this.novoe.Size = new System.Drawing.Size(23, 22);
 			this.novoe.Text = "Очистить";
+			this.novoe.Click += new System.EventHandler(this.novoe_Click);
 			// 
 			// toolStripDropDownButton1
 			// 
@@ -180,6 +181,16 @@
 			this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButton2.Text = "Создать";
 			this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+			// 
+			// toolStripButton3
+			// 
+			this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+			this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton3.Name = "toolStripButton3";
+			this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButton3.Text = "Удалить";
+			this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
 			// 
 			// groupBox1
 			// 
@@ -344,16 +355,6 @@
 			this.picture.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picture_MouseDown);
 			this.picture.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picture_MouseMove);
 			this.picture.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picture_MouseUp);
-			// 
-			// toolStripButton3
-			// 
-			this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-			this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButton3.Name = "toolStripButton3";
-			this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-			this.toolStripButton3.Text = "Удалить";
-			this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
 			// 
 			// Form1
 			// 

@@ -60,10 +60,6 @@
       <Project>{361e1e31-4329-42f5-96cf-e8bd63d2984f}</Project>
       <Name>Course Project</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LibCourseProject\LibCourseProject.csproj">
-      <Project>{20aec9c7-03c9-4a3a-99e4-01796bc88c6a}</Project>
-      <Name>LibCourseProject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
