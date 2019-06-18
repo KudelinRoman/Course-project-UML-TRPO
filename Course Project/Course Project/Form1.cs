@@ -670,6 +670,11 @@ namespace Course_Project
 			sev.Zav.Clear();
 			picture.Refresh();
 		}
+
+		private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 	/// <summary>
 	/// Класс для сохранения элементов

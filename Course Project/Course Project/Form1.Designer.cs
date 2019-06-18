@@ -269,6 +269,7 @@
 			this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
 			this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 22);
 			this.toolStripDropDownButton1.Text = "Настройки";
+			this.toolStripDropDownButton1.Click += new System.EventHandler(this.toolStripDropDownButton1_Click);
 			// 
 			// измененияФонаToolStripMenuItem
 			// 
