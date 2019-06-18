@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CComponent.cs" />
     <Compile Include="CDependence.cs" />
     <Compile Include="CInterface.cs" />
     <Compile Include="CLimitOfTwoElements.cs" />
