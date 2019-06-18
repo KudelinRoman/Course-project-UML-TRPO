@@ -117,5 +117,17 @@
   <ItemGroup>
     <None Include="Resources\клетки1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\перемещение.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\галочка.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

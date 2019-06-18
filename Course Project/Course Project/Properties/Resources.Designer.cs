@@ -63,6 +63,16 @@ namespace Course_Project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel {
+            get {
+                object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Interfeis {
             get {
                 object obj = ResourceManager.GetObject("Interfeis", resourceCulture);
@@ -133,6 +143,16 @@ namespace Course_Project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Setting {
+            get {
+                object obj = ResourceManager.GetObject("Setting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Uzel {
             get {
                 object obj = ResourceManager.GetObject("Uzel", resourceCulture);
@@ -153,6 +173,16 @@ namespace Course_Project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap галочка {
+            get {
+                object obj = ResourceManager.GetObject("галочка", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap клетки {
             get {
                 object obj = ResourceManager.GetObject("клетки", resourceCulture);
@@ -166,6 +196,16 @@ namespace Course_Project.Properties {
         internal static System.Drawing.Bitmap клетки1 {
             get {
                 object obj = ResourceManager.GetObject("клетки1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap перемещение {
+            get {
+                object obj = ResourceManager.GetObject("перемещение", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
