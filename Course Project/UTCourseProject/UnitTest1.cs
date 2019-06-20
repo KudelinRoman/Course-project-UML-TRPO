@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using LibCourseProject;
+using Course_Project;
 
 namespace UTCourseProject
 {
