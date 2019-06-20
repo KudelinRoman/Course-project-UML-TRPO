@@ -18,108 +18,199 @@ namespace Course_Project
 
 			InitializeComponent();
 		}
+		/// <summary>
+		///  для сохранения
+		/// </summary>
 		Saved sev = new Saved();
 		delegate void del (MouseEventArgs e);
+		/// <summary>
+		/// Делегат для компонентов в виде фигур
+		/// </summary>
 		del deli;
 		delegate void del2 (MouseEventArgs e, MouseEventArgs e2);
+		/// <summary>
+		/// Делегат для компонентов в виде прямых
+		/// </summary>
 		del2 deli2;
 		// Обработка событий MouseEnter и MousLeave для изображений
 		#region
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox2_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Узел";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox2_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox1_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Компонент";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox1_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox3_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Пакет";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox3_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox4_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Интерфейс";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox4_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox5_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Зависимость";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox5_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox6_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Ограничение";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox6_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox7_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Примечание";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox7_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox8_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Ограничение 2 элементов";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox8_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при наведении на компонент, отображает название компонента в Labael
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox9_MouseEnter(object sender, EventArgs e)
 		{
 			label1.Text = "Ограничение ИЛИ";
 		}
-
+		/// <summary>
+		/// Метод вызываемый при покидании курсора мыши с выбираемого компонента, очищает Label
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void pictureBox9_MouseLeave(object sender, EventArgs e)
 		{
 			label1.Text = "";
 		}
 		#endregion
+		/// <summary>
+		/// Переменная класса MouseEventArgs, необходима для задания начала линии
+		/// </summary>
 		MouseEventArgs Ef;
+		/// <summary>
+		/// Переменная класса MouseEventArgs, необходима для задания начала линии
+		/// </summary>
 		MouseEventArgs Ef2;
-		public List<MouseEventArgs> Komponent = new List<MouseEventArgs>();
-		private void pictureBox2_MouseDown(object sender, MouseEventArgs e) //метод определяющий какой из элементов удерживается
+		/// <summary>
+		/// Метод определяющий какой из элементов удерживается
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void pictureBox2_MouseDown(object sender, MouseEventArgs e) 
 		{
 			if (sender == pictureBox2)
 			{
@@ -168,8 +259,11 @@ namespace Course_Project
 			}
 
 		}
-		
-		private void PaiK(MouseEventArgs e)// для картинки 1
+		/// <summary>
+		/// Метод для рисования "Узла"
+		/// </summary>
+		/// <param name="e"></param>
+		private void PaiK(MouseEventArgs e)
 		{
 			int x1 = e.X;
 			int y1 = e.Y;
@@ -180,7 +274,11 @@ namespace Course_Project
 			sev.Component.Add(e);
 			gr.Dispose();
 		}
-		private void PaiC(MouseEventArgs e)// для картинки 2
+		/// <summary>
+		/// Метод для рисования "Компонента"
+		/// </summary>
+		/// <param name="e"></param>
+		private void PaiC(MouseEventArgs e)
 		{
 		//	Saved sev = new Saved();
 			int x1 = e.X;
@@ -193,7 +291,11 @@ namespace Course_Project
 			gr.Dispose();
 			
 		}
-		private void PaiU(MouseEventArgs e)// для картинки 6 u 7
+		/// <summary>
+		/// Метод для рисования "Примечания" или "Ограничения"
+		/// </summary>
+		/// <param name="e"></param>
+		private void PaiU(MouseEventArgs e)
 		{
 			int x1 = e.X;
 			int y1 = e.Y;
@@ -204,7 +306,11 @@ namespace Course_Project
 			sev.Prim.Add(e);
 			gr.Dispose();
 		}
-		private void PaiP(MouseEventArgs e)// для картинки 3
+		/// <summary>
+		/// Метод для рисования "Пакета"
+		/// </summary>
+		/// <param name="e"></param>
+		private void PaiP(MouseEventArgs e)
 		{
 			int x1 = e.X;
 			int y1 = e.Y;
@@ -215,21 +321,31 @@ namespace Course_Project
 			sev.Pac.Add(e);
 			gr.Dispose();
 		}
-		private void PaiI(MouseEventArgs e ,MouseEventArgs e2)// для картинки 4
+		/// <summary>
+		/// Метод для рисования "Интерфейса"
+		/// </summary>
+		/// <param name="e"></param>
+		/// <param name="e2"></param>
+		private void PaiI(MouseEventArgs e, MouseEventArgs e2)
 		{
 			float x1 = e.X;
 			float y1 = e.Y;
 			float x2 = e2.X;
 			float y2 = e2.Y;
-			Pen p = new Pen(Color.Blue,5);
-			p.StartCap = System.Drawing.Drawing2D.LineCap.RoundAnchor; 
+			Pen p = new Pen(Color.Blue, 5);
+			p.StartCap = System.Drawing.Drawing2D.LineCap.RoundAnchor;
 			Graphics gr = picture.CreateGraphics();
-			gr.DrawLine(p, x1 , y1 , x2, y2);
+			gr.DrawLine(p, x1, y1, x2, y2);
 			sev.Intrf.Add(e);
 			sev.Intrf.Add(e2);
 			gr.Dispose();
 		}
-		private void PaiS(MouseEventArgs e, MouseEventArgs e2)// для картинки 5
+		/// <summary>
+		/// Метод для рисования "Зависимости"
+		/// </summary>
+		/// <param name="e"></param>
+		/// <param name="e2"></param>
+		private void PaiS(MouseEventArgs e, MouseEventArgs e2)
 		{
 			float x1 = e.X;
 			float y1 = e.Y;
@@ -244,6 +360,11 @@ namespace Course_Project
 			sev.Zav.Add(e2);
 			gr.Dispose();
 		}
+		/// <summary>
+		/// Метод для рисования "Ограничения 2 элементов"
+		/// </summary>
+		/// <param name="e"></param>
+		/// <param name="e2"></param>
 		private void PaiL (MouseEventArgs e, MouseEventArgs e2)
 		{
 			float x1 = e.X;
@@ -259,6 +380,11 @@ namespace Course_Project
 			sev.Organ2.Add(e2);
 			gr.Dispose();
 		}
+		/// <summary>
+		/// Метод для рисования "Ограничения ИЛИ"
+		/// </summary>
+		/// <param name="e"></param>
+		/// <param name="e2"></param>
 		private void PaiM(MouseEventArgs e, MouseEventArgs e2)
 		{
 			float x1 = e.X;
@@ -274,7 +400,11 @@ namespace Course_Project
 			sev.OrganOR.Add(e2);
 			gr.Dispose();
 		}
-
+		/// <summary>
+		/// Рисование компонентов в виде фигур после клика мышью по форме
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void picture_MouseClick(object sender, MouseEventArgs e)
 		{
 			if (deli != null)
@@ -379,12 +509,20 @@ namespace Course_Project
 			}
 			
 		}
-
+		/// <summary>
+		/// Метод запоминающий параметр "е" после нажатия на кнопку мыши (для рисования прямых)
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void picture_MouseDown(object sender, MouseEventArgs e)
 		{
 			Ef = e;
 		}
-
+		/// <summary>
+		/// Метод запоминающий параметр "е" после отпускания кнопки мыши (для рисования прямых)
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void picture_MouseUp(object sender, MouseEventArgs e)
 		{
 			Ef2 = e;
@@ -501,12 +639,20 @@ namespace Course_Project
 				pe.Dispose();
 			}
 		}
-
+		/// <summary>
+		/// Метод для для вызова метода перерисовки после изменения формы
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void picture_Paint(object sender, PaintEventArgs e)
 		{
 			picture_Paint();
 		}
-
+		/// <summary>
+		/// Метод вызываемый после нажатия на кнопку "Переместить"
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void toolStripButton1_Click(object sender, EventArgs e)
 		{
 			this.Cursor = Cursors.SizeAll; 
@@ -560,6 +706,11 @@ namespace Course_Project
 			pen.Dispose();
 			gr.Dispose();
 		}
+		/// <summary>
+		/// Метод вызываемый после нажатия на кнопку "Создать"
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void toolStripButton2_Click(object sender, EventArgs e)
 		{
 			this.Cursor = Cursors.Arrow;
@@ -575,7 +726,11 @@ namespace Course_Project
 			picture.Refresh();
 			picture_Paint();
 		}
-
+		/// <summary>
+		/// Метод для перемещения компонентов
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void picture_MouseMove(object sender, MouseEventArgs e)
 		{
 			if (this.Cursor == Cursors.SizeAll)
@@ -641,7 +796,11 @@ namespace Course_Project
 				}
 			}
 		}
-
+		/// <summary>
+		/// Метод вызываемый после нажатия на кнопку "Удалить"
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void toolStripButton3_Click(object sender, EventArgs e)
 		{
 			this.Cursor = Cursors.Hand;
@@ -657,7 +816,11 @@ namespace Course_Project
 			deli = null; deli2 = null;
 			Points();
 		}
-
+		/// <summary>
+		/// Метод вызваемый после нажатия на кнопку "Создать новый"
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void novoe_Click(object sender, EventArgs e)
 		{
 			sev.Component.Clear();
@@ -670,7 +833,11 @@ namespace Course_Project
 			sev.Zav.Clear();
 			picture.Refresh();
 		}
-
+		/// <summary>
+		/// Метод вызываемый после нажатия на кнопку "Настройки"
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void toolStripDropDownButton1_Click(object sender, EventArgs e)
 		{
 
@@ -682,13 +849,37 @@ namespace Course_Project
 	[Serializable]
 	public class Saved
 	{
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Узел"
+		/// </summary>
 		public List<MouseEventArgs> Unit = new List<MouseEventArgs> { };
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Компонент"
+		/// </summary>
 		public List<MouseEventArgs> Component = new List<MouseEventArgs> { };
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Пакет"
+		/// </summary>
 		public List<MouseEventArgs> Pac = new List<MouseEventArgs> { };
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Интерфейс"
+		/// </summary>
 		public List<MouseEventArgs> Intrf = new List<MouseEventArgs> { };
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Зависимости"
+		/// </summary>
 		public List<MouseEventArgs> Zav = new List<MouseEventArgs> { };
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Примечание"
+		/// </summary>
 		public List<MouseEventArgs> Prim = new List<MouseEventArgs> { };
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Ограничение 2 элементов"
+		/// </summary>
 		public List<MouseEventArgs> Organ2 = new List<MouseEventArgs> { };
+		/// <summary>
+		/// Лист для хранения MouseEventArgs компонента "Ограничение ИЛИ"
+		/// </summary>
 		public List<MouseEventArgs> OrganOR = new List<MouseEventArgs> { };
 
 	}
