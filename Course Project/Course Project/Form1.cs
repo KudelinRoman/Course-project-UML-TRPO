@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Drawing.Drawing2D.LineCap;
+using Library;
 
 namespace Course_Project
 {
@@ -265,14 +266,9 @@ namespace Course_Project
 		/// <param name="e"></param>
 		private void PaiK(MouseEventArgs e)
 		{
-			int x1 = e.X;
-			int y1 = e.Y;
-			Pen p = new Pen(Color.Blue);
-			Graphics gr = picture.CreateGraphics();
-			Point[] points = { new Point(x1, y1), new Point(x1+90, y1), new Point(x1 + 90, y1 +80), new Point(x1 , y1 + 80), new Point(x1 , y1 + 70), new Point(x1 + 15, y1+70), new Point(x1 + 15, y1 + 55), new Point(x1 + 15, y1 + 70), new Point(x1 -15, y1 + 70), new Point(x1 -15, y1+55), new Point(x1+15, y1 + 55), new Point(x1, y1 + 55), new Point(x1, y1 + 25), new Point(x1+15, y1 + 25), new Point(x1 + 15, y1 + 10), new Point(x1 + 15, y1 + 25), new Point(x1-15, y1 + 25), new Point(x1-15, y1 + 10), new Point(x1+15, y1 + 10), new Point(x1, y1 +10) };
-			gr.DrawPolygon(p, points);
+			PaiK paiK = new PaiK(picture);
+			picture= paiK.Ris(e);
 			sev.Component.Add(e);
-			gr.Dispose();
 		}
 		/// <summary>
 		/// Метод для рисования "Компонента"
@@ -280,15 +276,9 @@ namespace Course_Project
 		/// <param name="e"></param>
 		private void PaiC(MouseEventArgs e)
 		{
-		//	Saved sev = new Saved();
-			int x1 = e.X;
-			int y1 = e.Y;
-			Pen p = new Pen(Color.Blue);
-			Graphics gr = picture.CreateGraphics();
-			Point[] points = { new Point(x1, y1), new Point(x1, y1 + 80), new Point(x1 + 80, y1 + 80), new Point(x1 + 80, y1 ), new Point(x1 , y1), new Point(x1 + 15, y1-15), new Point(x1 + 95, y1 -15), new Point(x1+80, y1), new Point(x1 + 80, y1+80), new Point(x1 + 95, y1+65), new Point(x1 + 95, y1-15), new Point(x1 + 80, y1) };
-			gr.DrawPolygon(p, points);
+			PaiC paiC = new PaiC(picture);
+			paiC.Ris(e);
 			sev.Unit.Add(e);
-			gr.Dispose();
 			
 		}
 		/// <summary>
@@ -297,14 +287,10 @@ namespace Course_Project
 		/// <param name="e"></param>
 		private void PaiU(MouseEventArgs e)
 		{
-			int x1 = e.X;
-			int y1 = e.Y;
-			Pen p = new Pen(Color.Blue);
-			Graphics gr= picture.CreateGraphics();
-			Point[] points = { new Point(x1, y1 ), new Point(x1 , y1 + 80), new Point(x1 + 90, y1 + 80), new Point(x1 + 90, y1 + 25), new Point(x1 + 75, y1 + 25), new Point(x1 + 75, y1 ),  new Point(x1 + 90, y1 + 25), new Point(x1 + 75, y1 ) };
-			gr.DrawPolygon(p,points);
+			PaiU paiU = new PaiU(picture);
+			paiU.Ris(e);
 			sev.Prim.Add(e);
-			gr.Dispose();
+
 		}
 		/// <summary>
 		/// Метод для рисования "Пакета"
@@ -312,14 +298,9 @@ namespace Course_Project
 		/// <param name="e"></param>
 		private void PaiP(MouseEventArgs e)
 		{
-			int x1 = e.X;
-			int y1 = e.Y;
-			Pen p = new Pen(Color.Blue);
-			Graphics gr = picture.CreateGraphics();
-			Point[] points = { new Point(x1, y1), new Point(x1, y1 + 15), new Point(x1 , y1 + 60), new Point(x1 + 90, y1 + 60), new Point(x1 + 90, y1 + 15), new Point(x1 + 25, y1+15), new Point(x1 , y1 + 15), new Point(x1 + 25, y1+15), new Point(x1 + 25, y1) };
-			gr.DrawPolygon(p, points);
+			PaiP paiP = new PaiP(picture);
+			paiP.Ris(e);
 			sev.Pac.Add(e);
-			gr.Dispose();
 		}
 		/// <summary>
 		/// Метод для рисования "Интерфейса"
@@ -328,17 +309,10 @@ namespace Course_Project
 		/// <param name="e2"></param>
 		private void PaiI(MouseEventArgs e, MouseEventArgs e2)
 		{
-			float x1 = e.X;
-			float y1 = e.Y;
-			float x2 = e2.X;
-			float y2 = e2.Y;
-			Pen p = new Pen(Color.Blue, 5);
-			p.StartCap = System.Drawing.Drawing2D.LineCap.RoundAnchor;
-			Graphics gr = picture.CreateGraphics();
-			gr.DrawLine(p, x1, y1, x2, y2);
+			PaiI paiI = new PaiI(picture);
+			paiI.Ris(e, e2);
 			sev.Intrf.Add(e);
 			sev.Intrf.Add(e2);
-			gr.Dispose();
 		}
 		/// <summary>
 		/// Метод для рисования "Зависимости"
@@ -347,18 +321,10 @@ namespace Course_Project
 		/// <param name="e2"></param>
 		private void PaiS(MouseEventArgs e, MouseEventArgs e2)
 		{
-			float x1 = e.X;
-			float y1 = e.Y;
-			float x2 = e2.X;
-			float y2 = e2.Y;
-			Pen p = new Pen(Color.Black, 5);
-			p.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash ;
-			p.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor ;
-			Graphics gr = picture.CreateGraphics();
-			gr.DrawLine(p, x1, y1, x2, y2);
+			PaiS paiS = new PaiS(picture);
+			paiS.Ris(e, e2);
 			sev.Zav.Add(e);
 			sev.Zav.Add(e2);
-			gr.Dispose();
 		}
 		/// <summary>
 		/// Метод для рисования "Ограничения 2 элементов"
@@ -367,18 +333,10 @@ namespace Course_Project
 		/// <param name="e2"></param>
 		private void PaiL (MouseEventArgs e, MouseEventArgs e2)
 		{
-			float x1 = e.X;
-			float y1 = e.Y;
-			float x2 = e2.X;
-			float y2 = e2.Y;
-			Pen p = new Pen(Color.Black, 5);
-			p.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-			p.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
-			Graphics gr = picture.CreateGraphics();
-			gr.DrawLine(p, x1, y1, x2, y2);
+			PaiL paiL = new PaiL(picture);
+			paiL.Ris(e, e2);
 			sev.Organ2.Add(e);
 			sev.Organ2.Add(e2);
-			gr.Dispose();
 		}
 		/// <summary>
 		/// Метод для рисования "Ограничения ИЛИ"
@@ -387,18 +345,10 @@ namespace Course_Project
 		/// <param name="e2"></param>
 		private void PaiM(MouseEventArgs e, MouseEventArgs e2)
 		{
-			float x1 = e.X;
-			float y1 = e.Y;
-			float x2 = e2.X;
-			float y2 = e2.Y;
-			Pen p = new Pen(Color.Black, 5);
-			p.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-			p.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
-			Graphics gr = picture.CreateGraphics();
-			gr.DrawLine(p, x1, y1, x2, y2);
+			PaiM paiM = new PaiM(picture);
+			paiM.Ris(e, e2);
 			sev.OrganOR.Add(e);
 			sev.OrganOR.Add(e2);
-			gr.Dispose();
 		}
 		/// <summary>
 		/// Рисование компонентов в виде фигур после клика мышью по форме
@@ -554,89 +504,54 @@ namespace Course_Project
 			for (int i = 0; i < sev.Unit.Count(); i++)
 			{
 				MouseEventArgs e = sev.Unit[i];
-				int x1 = sev.Unit[i].X;
-				int y1 = sev.Unit[i].Y;
-				Point[] points = { new Point(x1, y1), new Point(x1, y1 + 80), new Point(x1 + 80, y1 + 80), new Point(x1 + 80, y1), new Point(x1, y1), new Point(x1 + 15, y1 - 15), new Point(x1 + 95, y1 - 15), new Point(x1 + 80, y1), new Point(x1 + 80, y1 + 80), new Point(x1 + 95, y1 + 65), new Point(x1 + 95, y1 - 15), new Point(x1 + 80, y1) };
-				gr.DrawPolygon(p, points);
+				PaiC paiC = new PaiC(picture);
+				paiC.Paint(e);
 			}
 			for (int i = 0; i < sev.Component.Count(); i++)
 			{
 				MouseEventArgs e = sev.Component[i];
-				int x1 = e.X;
-				int y1 = e.Y;
-				Point[] points = { new Point(x1, y1), new Point(x1 + 90, y1), new Point(x1 + 90, y1 + 80), new Point(x1, y1 + 80), new Point(x1, y1 + 70), new Point(x1 + 15, y1 + 70), new Point(x1 + 15, y1 + 55), new Point(x1 + 15, y1 + 70), new Point(x1 - 15, y1 + 70), new Point(x1 - 15, y1 + 55), new Point(x1 + 15, y1 + 55), new Point(x1, y1 + 55), new Point(x1, y1 + 25), new Point(x1 + 15, y1 + 25), new Point(x1 + 15, y1 + 10), new Point(x1 + 15, y1 + 25), new Point(x1 - 15, y1 + 25), new Point(x1 - 15, y1 + 10), new Point(x1 + 15, y1 + 10), new Point(x1, y1 + 10) };
-				gr.DrawPolygon(p, points);
+				PaiK paiK = new PaiK(picture);
+				paiK.Paint(e);
 			}
 			for (int i = 0; i < sev.Prim.Count(); i++)
 			{
 				MouseEventArgs e = sev.Prim[i];
-				int x1 = e.X;
-				int y1 = e.Y;
-				Point[] points = { new Point(x1, y1), new Point(x1, y1 + 80), new Point(x1 + 90, y1 + 80), new Point(x1 + 90, y1 + 25), new Point(x1 + 75, y1 + 25), new Point(x1 + 75, y1), new Point(x1 + 90, y1 + 25), new Point(x1 + 75, y1) };
-				gr.DrawPolygon(p, points);
+				PaiU paiU = new PaiU(picture);
+				paiU.Paint(e);
 			}
 			for (int i = 0; i < sev.Pac.Count(); i++)
 			{
 				MouseEventArgs e = sev.Pac[i];
-				int x1 = e.X;
-				int y1 = e.Y;
-				Point[] points = { new Point(x1, y1), new Point(x1, y1 + 15), new Point(x1, y1 + 60), new Point(x1 + 90, y1 + 60), new Point(x1 + 90, y1 + 15), new Point(x1 + 25, y1 + 15), new Point(x1, y1 + 15), new Point(x1 + 25, y1 + 15), new Point(x1 + 25, y1) };
-				gr.DrawPolygon(p, points);
+				PaiP paiP = new PaiP(picture);
+				paiP.Paint(e);
 			}
 			for (int i = 0; i < sev.Intrf.Count(); i=i+2)
 			{
 				MouseEventArgs e = sev.Intrf[i];
 				MouseEventArgs e2 = sev.Intrf[i+1];
-				float x1 = e.X;
-				float y1 = e.Y;
-				float x2 = e2.X;
-				float y2 = e2.Y;
-				Pen pe = new Pen(Color.Blue, 5);
-				pe.StartCap = System.Drawing.Drawing2D.LineCap.RoundAnchor;
-				gr.DrawLine(pe, x1, y1, x2, y2);
-				pe.Dispose();
+				PaiI paiI = new PaiI(picture);
+				paiI.Paint(e, e2);
 			}
 			for (int i = 0; i < sev.Zav.Count(); i = i + 2)
 			{
 				MouseEventArgs e = sev.Zav[i];
 				MouseEventArgs e2 = sev.Zav[i+1];
-				float x1 = e.X;
-				float y1 = e.Y;
-				float x2 = e2.X;
-				float y2 = e2.Y;
-				Pen pe = new Pen(Color.Black, 5);
-				pe.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-				pe.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
-				gr.DrawLine(pe, x1, y1, x2, y2);
-				pe.Dispose();
+				PaiS paiS = new PaiS(picture);
+				paiS.Paint(e, e2);
 			}
 			for (int i = 0; i < sev.Organ2.Count(); i = i + 2)
 			{
 				MouseEventArgs e = sev.Organ2[i];
 				MouseEventArgs e2 = sev.Organ2[i+1];
-				float x1 = e.X;
-				float y1 = e.Y;
-				float x2 = e2.X;
-				float y2 = e2.Y;
-				Pen pe = new Pen(Color.Black, 5);
-				pe.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-				pe.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
-				gr.DrawLine(pe, x1, y1, x2, y2);
-				pe.Dispose();
+				PaiL paiL = new PaiL(picture);
+				paiL.Paint(e, e2);
 			}
 			for (int i = 0; i < sev.OrganOR.Count(); i = i + 2)
 			{
 				MouseEventArgs e = sev.OrganOR[i];
 				MouseEventArgs e2 = sev.OrganOR[i+1];
-				float x1 = e.X;
-				float y1 = e.Y;
-				float x2 = e2.X;
-				float y2 = e2.Y;
-				Pen pe = new Pen(Color.Black, 5);
-				pe.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-				pe.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
-				gr.DrawLine(pe, x1, y1, x2, y2);
-				pe.Dispose();
+				PaiM paiM = new PaiM(picture);
+				paiM.Paint(e, e2);
 			}
 		}
 		/// <summary>
@@ -842,45 +757,5 @@ namespace Course_Project
 		{
 
 		}
-	}
-	/// <summary>
-	/// Класс для сохранения элементов
-	/// </summary>
-	[Serializable]
-	public class Saved
-	{
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Узел"
-		/// </summary>
-		public List<MouseEventArgs> Unit = new List<MouseEventArgs> { };
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Компонент"
-		/// </summary>
-		public List<MouseEventArgs> Component = new List<MouseEventArgs> { };
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Пакет"
-		/// </summary>
-		public List<MouseEventArgs> Pac = new List<MouseEventArgs> { };
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Интерфейс"
-		/// </summary>
-		public List<MouseEventArgs> Intrf = new List<MouseEventArgs> { };
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Зависимости"
-		/// </summary>
-		public List<MouseEventArgs> Zav = new List<MouseEventArgs> { };
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Примечание"
-		/// </summary>
-		public List<MouseEventArgs> Prim = new List<MouseEventArgs> { };
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Ограничение 2 элементов"
-		/// </summary>
-		public List<MouseEventArgs> Organ2 = new List<MouseEventArgs> { };
-		/// <summary>
-		/// Лист для хранения MouseEventArgs компонента "Ограничение ИЛИ"
-		/// </summary>
-		public List<MouseEventArgs> OrganOR = new List<MouseEventArgs> { };
-
 	}
 }
